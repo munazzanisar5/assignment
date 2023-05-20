@@ -1,0 +1,203 @@
+@import "../partials/config.scss";
+@import "../partials/general.scss";
+@import "../partials/maxin.scss";
+
+#footer{
+    background-image: url(/images/background_dollarimg.png);
+    background-color: #4D4D4D;
+    padding: 3rem 0 1rem;
+    color: $white-color;
+    .footer_logo{
+        width: 6.063rem;
+
+    }
+    .footer_text{
+        padding: 1.625rem 0;
+        
+    }
+    .footer_links{
+        padding-top: 2rem;
+        p{
+            font-weight: 600;
+        }
+        .links,.useful_links,.other_links{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 1.563rem;
+            a{
+                color: $white-color;
+                padding-top: 0.8rem;
+            }
+        }
+        .other_links{
+            
+            a{
+                font-weight: 600;
+
+            }
+            small{
+                padding-top: 2rem;
+                display: block;
+                a{
+                    text-decoration: underline;
+                    font-weight: 400;
+                }
+            }
+        }
+        .contact_info{
+            padding-top: 0.8rem;
+            p{
+                text-align: left;
+                color: $white-color;
+                font-weight: 400;
+            }
+            .location{
+                display: flex;
+                gap: 1rem;
+            
+                &::before{
+                    content: "\f3c5";
+                    // font-family: "Font Awesome 5 Brands";
+                        // font-weight: 500;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        color: $white-color;
+                        font-size: 1.5rem;
+                        
+                }
+            }
+            .message{
+                display: flex;
+                gap: 1rem;
+                padding: 2rem 0;
+                &::before{
+                    content: "\f0e0";
+                    // font-family: "Font Awesome 5 Brands";
+                        // font-weight: 500;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        color: $white-color;
+                        font-size: 1.5rem;
+                        
+                }
+            }
+            .call{
+                display: flex;
+                gap: 1rem;
+                padding-bottom: 1.3rem;
+               
+                &::before{
+                    content: "\f095";
+                    // font-family: "Font Awesome 5 Brands";
+                        // font-weight: 500;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        color: $white-color;
+                        font-size: 1.5rem;
+                        
+                }
+            }
+        }
+        
+    }
+
+    .footer_bottom{
+        border-top: 1px solid $white-color;
+        margin-top: 3.813rem;
+        padding-top: 2rem;
+        p{
+            font-size: 0.875rem;
+        }
+        .social_links{
+            display: flex;
+            justify-content: right;
+            gap: 1.5rem;
+           .facebook{
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background:  $white-color;
+            padding: 0.2rem 0.7rem;
+        
+            a{                          
+                &::before{
+                    content: "\f39e";
+                    font-family: "Font Awesome 5 Brands";
+                    font-weight: 500;
+                    // font-family: "Font Awesome 5 Free";
+                    // font-weight: 900;
+                    color: $black-color;
+                    font-size: 1.5rem;
+                    
+            }
+            }
+            
+           }
+           .instagram{
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                background:  $white-color;
+                padding: 0.2rem 0.7rem;
+            a{
+               
+                &::before{
+                    content: "\f16d";
+                    font-family: "Font Awesome 5 Brands";
+                    font-weight: 500;
+                    // font-family: "Font Awesome 5 Free";
+                    // font-weight: 900;
+                    color: $black-color;
+                    font-size: 1.5rem;
+                    
+            }
+            }
+            
+           }
+           .twitter{
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background:  $white-color;
+            padding: 0.2rem 0.7rem;
+            a{
+                
+                &::before{
+                    content: "\f099";
+                    font-family: "Font Awesome 5 Brands";
+                    font-weight: 500;
+                    // font-family: "Font Awesome 5 Free";
+                    // font-weight: 900;
+                    color: $black-color;
+                    font-size: 1.5rem;
+                    
+            }
+            }
+            
+           }
+        }
+    }
+}
+
+// ================== Media Queries (small Devices)==================
+@media screen and (max-width: 600px){
+    #footer{
+        text-align: center;
+        .footer_logo{
+            margin: 0 auto;
+        }
+        .footer_links{
+            text-align: center;
+        }
+        .footer_bottom{
+            text-align: center;
+            p{
+                text-align: center;
+                padding-bottom: 2rem;
+            }
+            .social_links{
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,188 @@
+@import "../partials/config.scss";
+@import "../partials/general.scss";
+@import "../partials/maxin.scss";
+
+
+#team{
+   
+    .container{
+        .team_heading{
+            margin-bottom: 12rem;
+            h2{
+                // border-bottom: 2px solid $success-color;
+                // padding-bottom: 1.5rem;
+                &::after{
+                    content: " ";
+                    display: block;
+                    margin: 1rem auto;
+                    width: 6rem;
+                    height: 0.3rem;
+                    text-align: center;
+                    background: $success-color;
+                }
+            }
+            p{
+                font-size: 1.063rem;
+                padding: 1.625rem 0; 
+                position: relative;
+                &::before{
+                    content: url(/images/douted_block.png);
+                    position: absolute;
+                    left: -6rem;
+                    top: -2.5rem;
+                }
+
+            }
+        }
+        .row{
+            .team_member_details{
+                margin-top: -5.4rem;
+                
+                .team_member{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    background: $light-gray-color;
+                    
+                    padding: 7rem 2rem 2rem;
+                    position: relative;
+                    .team_img{
+                        width: 11.375rem;
+                        margin: 0 auto;
+                        position: absolute;
+                        top: -6rem;
+                        z-index: 2;
+                    }
+                    .team_info{
+                        text-align: center;
+                        p{
+                            padding-top: 1rem;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .qoutes{
+            h3{
+                text-align: center;
+                color: $black-color;
+                font-size: 1.313rem;
+                font-style: italic;
+                font-weight: 500;
+                padding: 3rem 9rem 1.5rem;
+                line-height: 30px;
+                position: relative;
+                &::before{
+                    content: url(/images/comma-left.svg);
+                    position: absolute;
+                    left: 6rem;
+                }
+
+                &::after{
+                    content: url(/images/comma-right.svg);
+                    position: absolute;
+                    right: 6rem;
+                    top: 3rem
+                }
+                
+                
+            }
+            .author_name{
+                color: $success-color;
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 500;
+                gap: 0.5rem;
+                &::before{
+                    content: "";
+                    display: block;
+                    width: 0.875rem;
+                    height: 1px;
+                    background: $success-color;
+                   
+                }
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 0.875rem;
+                    height: 1px;
+                    background: $success-color;
+                    
+                }
+                
+
+            }
+        }
+    }
+}
+
+// ================== Media Queries (Mediam Devices)==================
+@media screen and (max-width: 1024px){
+    #team{
+        .container{
+            .row{
+                .team_member_details{
+                    
+                }
+            }
+        }
+    }
+}
+
+// ================== Media Queries (small Devices)==================
+@media screen and (max-width: 992px){
+#team{
+   .container{
+    .row{
+        .team_member_details{
+            .team_member{
+               
+                padding: 15rem 2rem 2rem;
+                .team_img{
+                    top: 2rem;
+                }
+            }
+        }
+    }
+   }
+}
+}
+// ================== Media Queries (small Devices)==================
+@media screen and (max-width: 600px){
+    #team{
+        .container{
+            .team_heading{
+                margin-bottom: 6rem;
+            }
+            .row{
+                
+                .team_member_details{
+                   
+                    .team_member{
+                      
+                        padding: 15rem 2rem 2rem;
+                        .team_img{
+                            top: 2rem;
+                        }
+                    }
+                }
+            }
+            .qoutes{
+                h3{
+                    padding: 3rem 3rem 1.5rem;
+                    &::after{
+                        right: 2rem;
+                    }
+                    &::before{
+                        left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}

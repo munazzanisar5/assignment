@@ -1,0 +1,45 @@
+@import "../partials/config.scss";
+@import "../partials/general.scss";
+@import "../partials/maxin.scss";
+
+header{
+    background-image: url(/images/topimg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .container{
+        .header_content{
+            padding: 17.25rem 0;
+            text-align: center;
+            h1{
+                font-size: 4rem;
+                color: $white-color;
+            }
+            p{
+                opacity: 0.9;
+                color: $white-color;
+                font-size: 1.5rem;
+                padding: 2rem 5rem;
+            }
+        }
+    }
+}
+
+
+// ================== Media Queries (small Devices)==================
+@media screen and (max-width: 600px){
+    header{
+        .container{
+            .header_content{
+                h1{
+                    font-size: 2rem;
+                }
+                p{
+                    padding: 2rem 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    
+}

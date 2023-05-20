@@ -1,0 +1,97 @@
+@import "../partials/config.scss";
+@import "../partials/general.scss";
+@import "../partials/maxin.scss";
+
+#FAQ{
+    padding: 3rem 0;
+        
+    .FAQ_heading{
+        padding: 2rem 0;
+        position: relative;
+        &::after{
+            content: url(/images/douted_block.png);
+            position: absolute;
+            top: -2rem;
+            right: 7rem;
+            z-index: -5;
+
+        }
+        &::before{
+            content: url(/images/Ellipse\ 2.svg);
+            position: absolute;
+            top: -1rem;
+            right: 3rem;
+            z-index: -5;
+        }
+        h2{
+            &::after{
+                content: " ";
+                display: block;
+                margin: 1rem auto;
+                width: 7rem;
+                height: 0.3rem;
+                border-radius: 2rem;
+                text-align: center;
+                background: #86BE3F;
+            }
+        }
+    }
+    .accordian{
+        .FAQs{
+            box-shadow: $box-shadow;
+            padding: 1rem ;
+            margin: 1rem 0;
+            .question{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                h3{
+                    font-size: 1rem;
+                            color: $black-color;
+                            font-weight: 500;
+                            padding: 1rem 0;
+                }
+                .icon::after{
+                    font-family: "Font Awesome 5 Free";
+                    content: "\2b";
+                    font-weight: 900;
+                    color: #212529;
+                    
+                }
+                // .icon_close{
+                //     display: none;
+                //     &::after{
+                //         font-family: "Font Awesome 5 Free";
+                //         content: "\f068";
+                //         font-weight: 900;
+                //         color: #212529;
+                        
+                //     }
+                // }
+            }
+            .answer{
+                max-height: 0;
+               overflow: hidden;
+               transition: max-hight 1.4s ease;
+               p{
+                color: #54595F;
+                font-size: 0.875rem;
+                text-align: left;
+               }
+            }
+        }
+        .FAQs.active{
+            .answer{
+                max-height: 300px;
+              
+            }
+        }
+       
+        
+      
+    }
+    .faq_btn{
+        text-align: center;
+        padding: 2rem 0;
+    }
+}

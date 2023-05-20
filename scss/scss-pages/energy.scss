@@ -1,0 +1,160 @@
+@import "../partials/config.scss";
+@import "../partials/general.scss";
+@import "../partials/maxin.scss";
+
+#energy{
+    .container{
+        
+        .energy_img{
+            position: relative;
+            
+            .img_top{
+                position: absolute;
+                left: -3rem;
+                &::before{
+                    content: url(/images/douted_block.png);
+                    position: absolute;
+                    top: -1rem;
+                    left: -1rem;
+                    z-index: -3;
+                }
+            }
+            .img_center{
+                position: absolute;
+                z-index: -6;
+                top: 1rem;
+            }
+            .img_bottom{
+                position: absolute;
+                top: 16rem;
+                left: 8rem;
+                &::after{
+                    content: url(/images/douted_block.png);
+                    position: absolute;
+                    bottom: -1rem;
+                    right: -1rem;
+                    z-index: -3;
+                }
+            }
+        }
+        .energy_text{
+            position: relative;
+            left: -3rem;
+            top: 10rem;
+            &::before{
+                content: url(/images/douted_block.png);
+                    position: absolute;
+                    top: -6.7rem;
+                    right: 7rem;
+                    z-index: -3;
+            }
+            small{
+                color: $success-color;
+                font-size: 1.875rem;
+                text-transform: uppercase;
+                &::before{
+                    content: url(/images/circle_pattren.png);
+                        position: absolute;
+                        top: -2rem;
+                        right: -0.2rem;
+                        z-index: -3;
+                }
+            }
+            h3{
+                font-size: 1.7rem;
+                color: $black-color;
+                font-weight: 600;
+                line-height: 45px;
+                &::after{
+                    content: " ";
+                    display: block;
+                    margin-top: 1rem;
+                    width: 7rem;
+                    height: 0.3rem;
+                    border-radius: 2rem;
+                    text-align: center;
+                    background: #86BE3F;
+                }
+
+            }
+            p{
+                text-align: left;
+                color: $text-color;
+                font-size: 1.063rem;
+                padding-top: 2rem;
+            }
+        }
+    }
+}
+
+// ================== Media Queries (Mediam Devices)==================
+@media screen and (max-width: 1024px){
+    #energy{
+        .container{
+            
+            .energy_img{
+                position: static;
+                
+                .img_top{
+                    position: static;
+                    
+                    &::before{
+                        display: none;
+                        position: static;
+                        
+                    }
+                }
+                .img_center{
+                    position: static;
+                    display: none;
+                }
+                .img_bottom{
+                    position: static;
+                    
+                    &::after{
+                        content: url(/images/douted_block.png);
+                        position: static;
+                        display: none;
+                    }
+                }
+            }
+            .energy_text{
+                position: static;
+               
+                &::before{
+                    display: none;
+                        position: static;
+                      
+                }
+                small{
+                  
+                    &::before{
+                        display: none;
+                            position: static;
+                            
+                    }
+                }
+               
+                
+            }
+        }
+    }
+}
+
+// ================== Media Queries (Mediam Devices)==================
+@media screen and (max-width: 600px){
+    #energy{
+        .container{
+            .energy_text{
+                text-align: center;
+                h3{
+                    &::after{
+                       
+                        margin: 1rem auto;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

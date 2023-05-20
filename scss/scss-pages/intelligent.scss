@@ -1,0 +1,54 @@
+@import "../partials/config.scss";
+@import "../partials/general.scss";
+@import "../partials/maxin.scss";
+
+
+#intelligent{
+    margin-top: 22rem;
+    background-image: url(/images/pattern-8\ 2.png);
+    padding: 5rem 0;
+    .intelligent_heading{
+        padding-bottom: 2rem;
+        h2{
+            &::after{
+                content: " ";
+                display: block;
+                margin: 1rem auto;
+                width: 7rem;
+                height: 0.3rem;
+                border-radius: 2rem;
+                text-align: center;
+                background: #86BE3F;
+            }
+
+        }
+    }
+    .intelligent_info{
+        display: flex;
+        gap: 2rem;
+        padding: 1rem 0;
+        .icon{
+            
+            .image{
+                
+                border: 3px solid $success-color;
+                border-radius: 50rem;
+                width: 3.5rem;
+                height: 3.5rem;
+                padding: 0.4rem 0.5rem 0.5rem;
+                
+            }
+        }
+        .intelligent_text{
+            h3{
+                color: #1E1E1E;
+                font-size: 1.25rem;
+                line-height: 84.02%;
+            }
+            p{
+                text-align: left;
+                padding-top: 1rem;
+            }
+        }
+    }
+}

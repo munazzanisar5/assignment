@@ -1,0 +1,61 @@
+@import "../partials/config.scss";
+@import "../partials/general.scss";
+@import "../partials/maxin.scss";
+
+#sole{
+    background-image: url(/images/Frame\ \(1\).png);
+    padding: 3rem 0;
+   
+    .sole_heading{
+        h2{
+            padding: 2.313rem 0;
+            &::after{
+                content: " ";
+                display: block;
+                margin: 1rem auto;
+                width: 7rem;
+                height: 0.3rem;
+                border-radius: 2rem;
+                text-align: center;
+                background: #86BE3F;
+            }
+        }
+    }
+    .bg_img{
+        border: 2px dashed $success-color;
+       ;
+        
+
+        padding: 0.5rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .sole_block{
+            background: $white-color;
+            padding: 1rem;
+            
+            .sole_icon{
+                width: 2rem;
+                margin: 0 auto;
+            }
+            .sole_text{
+                padding: 1rem 0;
+                text-align: center;
+                h3{
+                    font-size: 1rem;
+                    padding: 0.5rem 0;
+                    color: $black-color;
+                }
+                p{
+                    font-size: 0.875rem;                   
+                }
+            }
+        }
+    }
+    .sol_btn{
+        text-align: center;
+        padding: 2rem 0;
+    }
+}

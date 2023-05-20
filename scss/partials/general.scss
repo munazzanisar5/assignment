@@ -1,0 +1,82 @@
+@import "./config.scss";
+@import "./maxin.scss";
+
+
+html{
+    scroll-behavior: smooth;
+
+    $scrollbar-2-thumb-width: 10px;
+	$scrollbar-2-thumb-color: #86BE3F;
+	$scrollbar-2-track-color: #F8F8F8;
+	
+    // Chrome & Opera
+    &::-webkit-scrollbar {
+       width: $scrollbar-2-thumb-width;
+		 height: $scrollbar-2-thumb-width;
+
+       &-track {
+           background-color: $scrollbar-2-track-color;
+       }
+
+       &-thumb {
+          background-color: $scrollbar-2-thumb-color;
+       }
+		 
+		 &-track,
+		 &-thumb {
+			 border-radius: 12px;
+		 }
+    }
+
+    // Firefox
+    scrollbar-width: thin;
+    scrollbar-color: $scrollbar-2-thumb-color $scrollbar-2-track-color;
+}
+
+body{
+    font-family: 'Poppins';
+    line-height: 1.5;
+    
+    user-select: none;
+    background: $white-color;
+}
+
+
+
+img{
+    display: block;
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 84.02%;
+}
+section{
+    margin-top: 3rem;
+     h2{
+        text-align: center;
+        font-size: 1.625rem;
+        color: $black-color;
+        font-weight: 600;
+        line-height: 30.25px;
+        text-transform: uppercase;
+    }
+    p{
+        text-align: center;
+        font-size: 1rem;
+        color: $black-color;
+    }
+        
+    
+}
+.btn{
+    @include button();
+}
+
+
+
+// ================== Media Queries (Mediam Devices)==================
+@media screen and (max-width: 600px){
+    section{
+        margin-top: 0.5rem;
+    }
+}

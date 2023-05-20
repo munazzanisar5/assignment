@@ -1,0 +1,33 @@
+@import "../partials/config.scss";
+@import "../partials/general.scss";
+@import "../partials/maxin.scss";
+
+
+#bonus{
+    background: #F9F9F9;
+    padding: 2rem 0;
+    .bouns_block{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background: $white-color;
+        padding: 1rem 0;
+        .bonus_img{
+            width: 2rem;
+            margin: 0 auto;
+        }
+        h3{
+            padding: 0.5rem 0;
+        }
+        p{
+            padding: 0 3rem;
+        }
+        p.bouns_p{
+            padding-top: 1rem;
+        }
+    }
+}
