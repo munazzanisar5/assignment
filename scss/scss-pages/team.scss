@@ -157,11 +157,16 @@
         .container{
             .team_heading{
                 margin-bottom: 6rem;
+                p{
+                    font-size: 0.875rem;
+                }
             }
             .row{
                 
                 .team_member_details{
-                   
+                    
+                        margin-top: -0.4rem;
+                    
                     .team_member{
                       
                         padding: 15rem 2rem 2rem;
@@ -174,6 +179,7 @@
             .qoutes{
                 h3{
                     padding: 3rem 3rem 1.5rem;
+                    font-size: 1rem;
                     &::after{
                         right: 2rem;
                     }

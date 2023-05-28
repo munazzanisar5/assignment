@@ -20,6 +20,21 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #86BE3F #F8F8F8;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+html::-webkit-scrollbar-track {
+  background-color: #F8F8F8;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #86BE3F;
+}
+html::-webkit-scrollbar-track, html::-webkit-scrollbar-thumb {
+  border-radius: 12px;
 }
 
 body {
@@ -72,6 +87,22 @@ section p {
 @media screen and (max-width: 600px) {
   section {
     margin-top: 0.5rem;
+  }
+  section h1 {
+    font-size: 1.8rem;
+  }
+  section h2 {
+    font-size: 1.4rem;
+  }
+  section h3 {
+    font-size: 1.2rem !important;
+    line-height: 1.5;
+  }
+  section h4 {
+    font-size: 1.3rem;
+  }
+  section p {
+    font-size: 0.875rem;
   }
 }
 #energy .container .energy_img {
@@ -188,6 +219,9 @@ section p {
   }
 }
 @media screen and (max-width: 600px) {
+  #energy .container .energy_img .img_top {
+    margin-bottom: -4rem;
+  }
   #energy .container .energy_text {
     text-align: center;
   }

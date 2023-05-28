@@ -145,6 +145,11 @@
 @media screen and (max-width: 600px){
     #energy{
         .container{
+             .energy_img {
+                .img_top{
+                    margin-bottom: -4rem;
+                }
+             }
             .energy_text{
                 text-align: center;
                 h3{
