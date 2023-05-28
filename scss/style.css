@@ -417,7 +417,7 @@ section p {
   }
 }
 header {
-  background-image: url(/images/topimg.png);
+  background: url(/images/topimg.png) fixed top;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
