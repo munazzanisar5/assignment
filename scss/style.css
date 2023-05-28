@@ -554,7 +554,7 @@ section p {
   }
 }
 #team .container .team_heading {
-  margin-bottom: 12rem;
+  margin-bottom: 14rem;
 }
 #team .container .team_heading h2::after {
   content: " ";
