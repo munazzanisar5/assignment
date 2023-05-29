@@ -53,7 +53,12 @@
     }
 }
 
-
+// ================== Media Queries (small Devices)==================
+@media screen and (max-width: 992px){
+    #intelligent {
+        margin-top: 2rem !important;
+    }
+}
 // ================== Media Queries (small Devices)==================
 @media screen and (max-width: 600px){
     #intelligent {

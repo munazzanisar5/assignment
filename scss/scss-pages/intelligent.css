@@ -145,6 +145,11 @@ section p {
   padding-top: 1rem;
 }
 
+@media screen and (max-width: 992px) {
+  #intelligent {
+    margin-top: 2rem !important;
+  }
+}
 @media screen and (max-width: 600px) {
   #intelligent {
     padding: 0;

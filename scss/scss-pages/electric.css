@@ -143,6 +143,11 @@ section p {
   color: #363636;
 }
 
+@media screen and (max-width: 992px) {
+  #electric {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 600px) {
   #electric {
     padding: 0;

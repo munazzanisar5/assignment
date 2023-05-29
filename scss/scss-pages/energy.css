@@ -218,6 +218,17 @@ section p {
     position: static;
   }
 }
+@media screen and (max-width: 992px) {
+  #energy .container .energy_img .img_top {
+    margin-bottom: -10rem;
+  }
+  #energy .container .energy_text {
+    text-align: center;
+  }
+  #energy .container .energy_text h3::after {
+    margin: 1rem auto;
+  }
+}
 @media screen and (max-width: 600px) {
   #energy .container .energy_img .img_top {
     margin-bottom: -4rem;

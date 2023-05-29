@@ -142,6 +142,28 @@
 }
 
 // ================== Media Queries (Mediam Devices)==================
+@media screen and (max-width: 992px){
+    #energy{
+        .container{
+             .energy_img {
+                .img_top{
+                    margin-bottom: -10rem;
+                }
+             }
+            .energy_text{
+                text-align: center;
+                h3{
+                    &::after{
+                       
+                        margin: 1rem auto;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+// ================== Media Queries (Mediam Devices)==================
 @media screen and (max-width: 600px){
     #energy{
         .container{

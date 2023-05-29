@@ -199,6 +199,9 @@ section p {
 }
 
 @media screen and (max-width: 992px) {
+  #team .container .row .team_member_details {
+    margin-top: -12rem;
+  }
   #team .container .row .team_member_details .team_member {
     padding: 15rem 2rem 2rem;
   }
