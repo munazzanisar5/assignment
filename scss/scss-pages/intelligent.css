@@ -108,9 +108,6 @@ section p {
 #intelligent {
   margin-top: 22rem;
   background-image: url(/images/pattern2.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding: 5rem 0;
 }
 #intelligent .intelligent_heading {
