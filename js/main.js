@@ -1,3 +1,8 @@
+window.onload=()=>{
+  mobile_menu.style.display = "none";
+}
+
+
 let hamburg = document.querySelector(".hamburg");
 
 let mobile_menu = document.querySelector(".mobile");
@@ -13,9 +18,6 @@ hamburg.onclick = function() {
       }
   }
 
-window.onload=()=>{
-  mobile_menu.style.display = "none";
-}
 
 
 
